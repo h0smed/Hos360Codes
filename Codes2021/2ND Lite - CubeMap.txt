@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://hassangencc.000webhostapp.com/npm/2.5.6/build/360.css"/>
+    <script type="text/javascript" src="https://hassangencc.000webhostapp.com/npm/2.5.6/build/360.js"></script>
+    <style>
+    #panorama {
+        width: 600px;
+        height: 480px;
+    }
+      
+    </style>
+</head>
+<body>
+
+<div id="panorama">
+</div>
+
+<script>
+// Create viewer
+pannellum.viewer('panorama', {
+    "type": "cubemap",
+	"autoLoad": true,
+	"showControls": true,
+	"autoRotate": -5,
+	"compass": true,
+    "northOffset": 247.5,
+    "cubeMap": [
+        "https://pannellum.org/images/wyman-park-playground-cubic/face0.jpg",
+        "https://pannellum.org/images/wyman-park-playground-cubic/face1.jpg",
+        "https://pannellum.org/images/wyman-park-playground-cubic/face2.jpg",
+        "https://pannellum.org/images/wyman-park-playground-cubic/face3.jpg",
+        "https://pannellum.org/images/wyman-park-playground-cubic/face4.jpg",
+        "https://pannellum.org/images/wyman-park-playground-cubic/face5.jpg",
+        ]  
+});
+
+</script>
+
+</body>
+</html>
